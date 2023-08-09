@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/script/script.js" defer></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main>
+        <div class="inside-box">
+            <h1>Cálculo do IMC</h1>
+            <form>
+                <label for="height" id="label-height">Altura em cm (ex.: 160)</label>
+                <input type="number" id="height" required>
+                <label for="weight" id="label-weight">Peso (kg)</label>
+                <input type="number" id="weight" required>
+            </form>
+            <button type="submit" id="send-button">Calcular</button>
+            <div class="question-mark">
+                <img src="/assets/question-mark.png">
+            </div>
+            <div class="information-box">
+                A obesidade é determinada pelo Índice de Massa Corporal (IMC) que é calculado dividindo-se o peso (em kg) pelo quadrado da altura (em metros). O resultado revela se o peso está dentro da faixa ideal, abaixo ou acima do desejado.
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-box">
+                Seu IMC é de <span id="imc-number"></span> e na tabela disponibilizada pelo <a href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html" target="_blank">ministério da saúde</a> é classificado como <span class="color-imc"></span>.
+            <div class="close-button">
+                <img src="assets/marca-cruzada.png"/>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script src="/script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+:root {
+    font-size: 62,5%;  
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    background: hsla(214, 42%, 26%, 1);
+}
+
+/* Box Principal */
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-box {
+    background-color: rgb(255, 255, 255);
+    padding: 3rem;
+    box-shadow: 0.6rem 0.6rem 2.2rem 0rem rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    border: 1px solid #65AFFF;
+    position: relative;
+}
+
+.inside-box h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+form label {
+    font-size: 1rem;
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+    width: 100%; 
+    padding: .5rem;
+    margin-top: .5rem;
+    border: 1px solid #001f42;
+    background-color: #99999967;
+    margin-bottom: .5rem;
+}
+
+input:focus {
+    outline: 2px solid #65AFFF;
+}
+
+/* Botão */
+
+#send-button {
+    width: 8rem;
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    color: white;
+    background-color: #4B83C1;
+    border: .1rem solid black;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #1263c0;
+}
+
+/* Elementos Absolutos */
+
+.question-mark {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.question-mark img {
+    width: 1.5rem;
+}
+
+.information-box {
+    display: none;
+    width: 10rem;
+    padding: 1rem;
+    color: white;
+    position: absolute;
+    right: -9.5rem;
+    top: 2rem;
+    font-size: .9rem;
+    background-color: rgba(0, 0, 0, 0.534);
+    text-align: left;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    inset: 0;
+}
+
+.modal-box {
+    padding: 3rem;
+    position: relative;
+    width: min(30rem, 70%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.6rem 0.6rem 2.2rem 0rem rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    border: 1px solid #65AFFF;
+    text-align: center;
+}
+
+.modal-box a {
+    text-decoration: underline;
+    color: black;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 1rem;
+    opacity: .7;
+}
+
+/* JS Classes */
+
+.hide {
+    display: none;
+}
+
+
+@media(max-width: 600px) {
+    .inside-box {
+    padding: 3rem;
+    box-shadow: 0.6rem 0.6rem 2.2rem 0rem rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    border: 1px solid #65AFFF;
+    position: relative;
+}
+
+.inside-box h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.question-mark {
+    display: none;
+}
+
+.modal-box {
+    padding: 2rem;
+}
+
+}
